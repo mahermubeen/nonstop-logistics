@@ -94,7 +94,7 @@ a {
     flex-direction: column;
     margin-bottom: 65px;
     padding: 0 23px;
-    li {
+    .menu-item {
       color: white;
       font-size: 25px;
       font-weight: 400;
@@ -181,4 +181,38 @@ a {
 .router-link-active {
   color: black !important;
   border-bottom: 1px solid black !important;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+.fade-out {
+  opacity: 0;
+  animation-name: fadeOutOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
 }

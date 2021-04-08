@@ -1,9 +1,7 @@
 <template>
   <section class="home">
-    <img 
-class="bg-img" src="../../assets/img/bg-circle.png" />
-    <img 
-class="bg-img-s" src="../../assets/img/bg-circle-s.png" />
+    <img class="bg-img" src="../../assets/img/bg-circle.png" />
+    <img class="bg-img-s" src="../../assets/img/bg-circle-s.png" />
 
     <div class="row1">
       <div class="container">
@@ -24,8 +22,7 @@ class="bg-img-s" src="../../assets/img/bg-circle-s.png" />
     </div>
 
     <div class="row-2-1">
-      <div 
-class="carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel" data-flickity='{ "wrapAround": true }'>
         <div class="carousel-cell">
           <div class="col1">
             <h1>

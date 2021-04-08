@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="menu" class="mob-menu hidden">
+    <div id="menu" class="mob-menu hidden fade-in">
       <div class="row1">
         <img class="logo-brand" src="./assets/img/logo.png" />
         <img id="close-btn" class="menu-btn" src="./assets/img/Icon feather-menu-black.png" />
@@ -15,9 +15,7 @@
         <router-link class="menu-item" :class="{ active: $route.name === 'services' }" tag="li" to="/services" exact
           >Services</router-link
         >
-        <router-link class="menu-item" :class="{ active: $route.name === 'contact' }" tag="li" to="/contact" exact
-          >Contact Us</router-link
-        >
+        <a href="#contact" tag="li" class="menu-item">Contact Us</a>
       </ul>
       <div class="footer">
         <div class="row-1">
@@ -48,9 +46,7 @@
           <router-link class="tab" :class="{ active: $route.name === 'delivery' }" to="/delivery" exact
             >Delivery On Demand</router-link
           >
-          <router-link class="tab" :class="{ active: $route.name === 'contact' }" to="/contact" exact
-            >CONTACT Us</router-link
-          >
+          <a href="#contact" class="tab">CONTACT Us</a>
           <router-link class="tab" :class="{ active: $route.name === 'account' }" to="/account" exact
             >My Account</router-link
           >
@@ -63,7 +59,7 @@
     <router-view class="section" />
 
     <div class="footer">
-      <div class="container">
+      <div class="container" id="contact">
         <h1>Contact Us</h1>
 
         <div class="row1">
